@@ -127,11 +127,11 @@ footer { margin: 40px 0 28px; padding-top: 18px; border-top: 1px solid var(--lin
 .gate > * { min-width: 0; }
 .gate .art img { aspect-ratio: 5 / 4; object-position: 50% 60%; }
 .gate h1 { font-size: clamp(42px, 7vw, 84px); }
-.gate form { margin-top: 22px; display: grid; gap: 10px; max-width: 360px; }
+.gate form { margin-top: 22px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; max-width: 360px; }
 .gate label { font-weight: 800; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .gate .row { display: flex; gap: 8px; }
 .gate input {
-  flex: 1 1 auto; min-width: 0; font: 600 18px/1.2 var(--body); padding: 13px 14px; border-radius: 12px;
+  flex: 1 1 auto; width: 0; min-width: 0; font: 600 18px/1.2 var(--body); padding: 13px 14px; border-radius: 12px;
   border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
 }
 .gate input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
